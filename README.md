@@ -1,16 +1,16 @@
-# NJIT Highlander Bot 🤖
+# yeshiva  Bot 🤖
 
-Welcome to the **NJIT Highlander Bot**, your friendly guide to all things NJIT! This chatbot is designed to assist NJIT students, faculty, and prospective students with any questions they may have about NJIT. The Highlander Bot leverages a combination of RAG (Retrieval-Augmented Generation) and fine-tuned LLM (Large Language Model) technology to provide accurate and up-to-date information directly from NJIT's website.
+Welcome to the **yeshiva  Bot**, your friendly guide to all things yeshiva! This chatbot is designed to assist yeshiva students, faculty, and prospective students with any questions they may have about yeshiva. The  Bot leverages a combination of RAG (Retrieval-Augmented Generation) and fine-tuned LLM (Large Language Model) technology to provide accurate and up-to-date information directly from yeshiva's website.
 
 ## How It Works 🛠️
 
-The NJIT Highlander Bot is powered by an LLM trained on data scraped from various sections of the NJIT website, creating a knowledge base that enables the bot to respond intelligently to queries. The process of data gathering and embedding is outlined below.
+The yeshiva  Bot is powered by an LLM trained on data scraped from various sections of the yeshiva website, creating a knowledge base that enables the bot to respond intelligently to queries. The process of data gathering and embedding is outlined below.
 
 ### 1. Data Scraping with BeautifulSoup 🥣
 
-To build the bot's knowledge base, we used BeautifulSoup to scrape content from the NJIT website. This content serves as the foundation of the bot’s responses, allowing it to provide answers that are accurate and relevant.
+To build the bot's knowledge base, we used BeautifulSoup to scrape content from the yeshiva website. This content serves as the foundation of the bot’s responses, allowing it to provide answers that are accurate and relevant.
 
-The script collects text from specified URLs, focusing on paragraph elements that contain the core information about NJIT. This collected text is then processed for further steps.
+The script collects text from specified URLs, focusing on paragraph elements that contain the core information about yeshiva. This collected text is then processed for further steps.
 
 ### 2. Creating Vector Embeddings with FAISS 🧬
 
@@ -24,17 +24,17 @@ To create an intelligent RAG-based chatbot, we leveraged **`nvidia/llama-3.1-nem
 
 ### 4. Fine-Tuning with BERT for Custom Data 🧠
 
-In addition to the initial LLM, we implemented **BERT** from the `transformers` library and fine-tuned it on custom NJIT data. To generate this fine-tuning dataset, we used **`nvidia/nemotron-4-340b`**, another advanced language model from NVIDIA, which produced synthetic data closely aligned with the types of queries and responses relevant to NJIT.
+In addition to the initial LLM, we implemented **BERT** from the `transformers` library and fine-tuned it on custom yeshiva data. To generate this fine-tuning dataset, we used **`nvidia/nemotron-4-340b`**, another advanced language model from NVIDIA, which produced synthetic data closely aligned with the types of queries and responses relevant to yeshiva.
 
-The integration of BERT, fine-tuned with this custom dataset, added a layer of specificity, enabling the Highlander Bot to better address nuanced questions and provide more personalized assistance to NJIT users. This approach, combining both a large-scale LLM and a fine-tuned BERT model, helped us achieve a balanced chatbot capable of accurate retrieval and context-aware responses.
+The integration of BERT, fine-tuned with this custom dataset, added a layer of specificity, enabling the  Bot to better address nuanced questions and provide more personalized assistance to yeshiva users. This approach, combining both a large-scale LLM and a fine-tuned BERT model, helped us achieve a balanced chatbot capable of accurate retrieval and context-aware responses.
 
 
-# NJIT Highlander Bot Architecture Flow
+# yeshiva  Bot Architecture Flow
 
 ```plaintext
-                         # NJIT Highlander Bot Architecture Flow
+                         # yeshiva  Bot Architecture Flow
 
-The NJIT Highlander Bot architecture is designed to provide quick, accurate, and contextually relevant responses by combining predefined responses, a large language model (LLM), and a fine-tuned fallback model. Here’s a detailed step-by-step explanation of the flow:
+The yeshiva  Bot architecture is designed to provide quick, accurate, and contextually relevant responses by combining predefined responses, a large language model (LLM), and a fine-tuned fallback model. Here’s a detailed step-by-step explanation of the flow:
 
 ---
 
@@ -108,15 +108,15 @@ The NJIT Highlander Bot architecture is designed to provide quick, accurate, and
 
 ```
 
-# NJIT Highlander Bot Architecture Flow
+# yeshiva  Bot Architecture Flow
 
-The NJIT Highlander Bot architecture is designed to provide quick, accurate, and contextually relevant responses by combining predefined responses, a large language model (LLM), and a fine-tuned fallback model. Here’s a detailed step-by-step explanation of the flow:
+The yeshiva  Bot architecture is designed to provide quick, accurate, and contextually relevant responses by combining predefined responses, a large language model (LLM), and a fine-tuned fallback model. Here’s a detailed step-by-step explanation of the flow:
 
 ---
 
 # Architecture Flow Explained
 
-The NJIT Highlander Bot follows a structured flow to ensure fast, accurate, and contextually relevant responses. Here’s a breakdown of each step in the architecture:
+The yeshiva  Bot follows a structured flow to ensure fast, accurate, and contextually relevant responses. Here’s a breakdown of each step in the architecture:
 
 1. **User Query** 💬  
    - The process begins when a user submits a query to the chatbot.
@@ -140,7 +140,7 @@ The NJIT Highlander Bot follows a structured flow to ensure fast, accurate, and 
    - After generating the response (whether from context in the vector database or web scraping), the bot **stores the output in the conversation log** for future reference.
 
 6. **Timeout Handling and Fine-Tuned BERT** ⏱️  
-   - If the NVIDIA LLM takes too long to generate a response, the bot activates a **fine-tuned BERT model** as a fallback. This BERT model, fine-tuned on NJIT-specific data, quickly generates a response to ensure the user isn’t kept waiting.
+   - If the NVIDIA LLM takes too long to generate a response, the bot activates a **fine-tuned BERT model** as a fallback. This BERT model, fine-tuned on yeshiva-specific data, quickly generates a response to ensure the user isn’t kept waiting.
    - The response from the BERT model is also **stored in the conversation log**, allowing for quick retrieval in future queries.
 
 7. **Store in Conversation Log** 🗂️  
@@ -150,44 +150,15 @@ The NJIT Highlander Bot follows a structured flow to ensure fast, accurate, and 
 
 ## Summary
 
-This architecture flow allows the NJIT Highlander Bot to:
+This architecture flow allows the yeshiva  Bot to:
 
 - **Quickly handle common queries** with predefined responses.
 - **Leverage the power of NVIDIA LLM** for complex, context-dependent questions.
 - **Fallback on fine-tuned BERT** for timely responses when needed.
 - **Continuously update** its conversation log for improved efficiency and accuracy.
 
-This structured approach ensures a fast, accurate, and user-friendly experience tailored to the needs of NJIT students, faculty, and prospective students.
+This structured approach ensures a fast, accurate, and user-friendly experience tailored to the needs of yeshiva students, faculty, and prospective students.
 
-
-## Chatbot Application Snapshots
-
-### Home page 
-
-
-![image](https://github.com/user-attachments/assets/514919f4-8301-4671-915a-ac4ba535d634)
-
-### Response for a stop word 
-
-![image](https://github.com/user-attachments/assets/0ee763a0-c4dc-4210-9045-ba06ad7d09d7)
-
-### Response for data not present in data base 
-
-![image](https://github.com/user-attachments/assets/1b33a65b-96f4-4e2c-9554-070ac2a0fefe)
-
-
-
-### Response for question from converstion log 
-
-![image](https://github.com/user-attachments/assets/f7e61737-1aa0-4f5d-8069-310dfb3071d6)
-
-![image](https://github.com/user-attachments/assets/582ab704-fbc9-4395-9842-f6d2c0f8b4b0)
-
-### Response for Pre defined question 
-
-![image](https://github.com/user-attachments/assets/3a933310-4db5-40fd-ab1d-6072a26f3fe2)
-
-![image](https://github.com/user-attachments/assets/6db6835a-711a-450d-b5fe-26d6ecb86787)
 
 
 
